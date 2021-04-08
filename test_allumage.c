@@ -168,7 +168,7 @@ main(int argc, char *argv[])
 		 */
 		printf("I'm reading %d in GPIO %d\n", GPIORead(PIN), PIN);
 		
-		/*int distance = %d / ....;
+		/*int distance = %d * 36000;
 		
 	
 		while(distance < 30){
@@ -176,9 +176,8 @@ main(int argc, char *argv[])
 			if (-1 == GPIOWrite(LOUT, 0))
 				return(3);}
 		
-		else {
-			if (-1 == GPIOWrite(LOUT, 1))
-				return(3);}
+		
+		if (-1 == GPIOWrite(LOUT, 1))return(3);
 		
 		
 		*/
@@ -186,9 +185,9 @@ main(int argc, char *argv[])
 		usleep(500 * 3000);
 		
 		 
-	}
+	
 	/* while (distance < 30)*/
-	while (repeat--);
+	while (repeat--);}
 
 	/*
 	 * Disable GPIO pins
